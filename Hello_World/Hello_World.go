@@ -10,9 +10,7 @@ import ( //Importando os packages
 func HelloWorld() {
 	fmt.Print("Exemplo 1  (Hello World!): \n\n")
 	//chamando a função de explicação
-	Explained := Explain.ExplainThis(1)
-	//Print visual da explicação
-	fmt.Println(Explained)
+	fmt.Println(Explain.ExplainThis(1))
 	//Print na tela da mensagem definida!
 	fmt.Println("Hello World")
 }

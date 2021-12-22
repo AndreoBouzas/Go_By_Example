@@ -18,10 +18,10 @@ func Values() {
 	fmt.Println("1+1 =", 1+1)
 	fmt.Print("7.0/3.0 =", 7.0/3.0, "\n\n")
 	fmt.Print("Booleans, uso dos operadores booleanos como esperado, true/ false \n EXEMPLO : \n" + `
-	fmt.Println(true && false)
 	fmt.Println(true || false)
+	fmt.Println(true && false)
 	fmt.Println(!true)` + "\n\n RESULTADO : \n\n")
-	fmt.Println(true && false)
 	fmt.Println(true || false)
+	fmt.Println(true && false)
 	fmt.Println(!true)
 }

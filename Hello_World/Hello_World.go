@@ -8,6 +8,7 @@ import ( //Importando os packages
 
 //Declarando a função principal
 func HelloWorld() {
+	fmt.Print("Exemplo 1  (Hello World!): \n\n")
 	//chamando a função de explicação
 	Explained := Explain.ExplainThis(1)
 	//Print visual da explicação

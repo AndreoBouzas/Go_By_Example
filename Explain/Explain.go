@@ -19,6 +19,10 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("for é a única construção de loop de Go. Aqui estão alguns tipos básicos de forloops!")
 	} else if exampleNumber == 6 {
 		finaltext = fmt.Sprintln("If e Else, são condições de verificação que determinam diferentes comportamentos do código")
+	} else if exampleNumber == 7 {
+		finaltext = fmt.Sprintln("Declarações Switch expressam condicionais voltadas a diversos casos, apresentam funcionalidade similar ao If/Else!")
+	} else if exampleNumber == 8 {
+		finaltext = fmt.Sprintln("Em Go, uma matriz(Array) é uma sequência numerada de elementos de um comprimento específico.")
 	}
 	return finaltext
 }

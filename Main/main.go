@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 
+	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
+	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
 	Variables "github.com/AndreoBouzas/Go_By_Example/Variables"
 )
@@ -19,7 +21,8 @@ func main() {
 	fmt.Println("Exemplo 4  (Constantes)")
 	fmt.Println("Exemplo 5  (Laço For)")
 	fmt.Println("Exemplo 6  (If/Else)")
-	fmt.Println("")
+	fmt.Println("Exemplo 7  (Switch)")
+	fmt.Println("Exemplo 8  (Arrays)")
 	exampleNumber := 0
 	fmt.Scan(&exampleNumber)
 
@@ -35,6 +38,10 @@ func main() {
 		For.For()
 	} else if exampleNumber == 6 {
 		If_Else.If_Else()
+	} else if exampleNumber == 7 {
+		Switch.Switch()
+	} else if exampleNumber == 8 {
+		Arrays.Arrays()
 	}
 
 }

@@ -16,21 +16,23 @@ import (
 )
 
 var (
-	underRed      = color.New(color.FgRed).Add(color.Underline)
-	exampleNumber = 0
+	formatVibrantYellow = color.New(color.FgHiYellow)
+	formatVibrantBlack  = color.New(color.FgBlack)
+	exampleNumber       = 0
 )
 
 func main() {
+
 	color.HiWhite("Digite o NÚMERO do exemplo que gostaria de ohar! :")
-	underRed.Println("Exemplo 1  (Hello World!)")
-	underRed.Println("Exemplo 2  (Valores e seus tipos)")
-	underRed.Println("Exemplo 3  (Variáveis e Declarações)")
-	underRed.Println("Exemplo 4  (Constantes)")
-	underRed.Println("Exemplo 5  (Laço For)")
-	underRed.Println("Exemplo 6  (If/Else)")
-	underRed.Println("Exemplo 7  (Switch)")
-	underRed.Println("Exemplo 8  (Arrays)")
-	underRed.Println("Exemplo 9  (Slices)")
+	formatVibrantYellow.Println("Exemplo 1  (Hello World!)")
+	formatVibrantYellow.Println("Exemplo 2  (Valores e seus tipos)")
+	formatVibrantYellow.Println("Exemplo 3  (Variáveis e Declarações)")
+	formatVibrantYellow.Println("Exemplo 4  (Constantes)")
+	formatVibrantYellow.Println("Exemplo 5  (Laço For)")
+	formatVibrantYellow.Println("Exemplo 6  (If/Else)")
+	formatVibrantYellow.Println("Exemplo 7  (Switch)")
+	formatVibrantYellow.Println("Exemplo 8  (Arrays)")
+	formatVibrantYellow.Println("Exemplo 9  (Slices)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {

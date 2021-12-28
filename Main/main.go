@@ -8,40 +8,50 @@ import (
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
+	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
 	Variables "github.com/AndreoBouzas/Go_By_Example/Variables"
+	color "github.com/fatih/color"
+)
+
+var (
+	underRed      = color.New(color.FgRed).Add(color.Underline)
+	exampleNumber = 0
 )
 
 func main() {
-	fmt.Println("Digite o NÚMERO do exemplo que gostaria de ohar! :")
-	fmt.Println("Exemplo 1  (Hello World!)")
-	fmt.Println("Exemplo 2  (Valores e seus tipos)")
-	fmt.Println("Exemplo 3  (Variáveis e Declarações)")
-	fmt.Println("Exemplo 4  (Constantes)")
-	fmt.Println("Exemplo 5  (Laço For)")
-	fmt.Println("Exemplo 6  (If/Else)")
-	fmt.Println("Exemplo 7  (Switch)")
-	fmt.Println("Exemplo 8  (Arrays)")
-	exampleNumber := 0
+	color.HiWhite("Digite o NÚMERO do exemplo que gostaria de ohar! :")
+	underRed.Println("Exemplo 1  (Hello World!)")
+	underRed.Println("Exemplo 2  (Valores e seus tipos)")
+	underRed.Println("Exemplo 3  (Variáveis e Declarações)")
+	underRed.Println("Exemplo 4  (Constantes)")
+	underRed.Println("Exemplo 5  (Laço For)")
+	underRed.Println("Exemplo 6  (If/Else)")
+	underRed.Println("Exemplo 7  (Switch)")
+	underRed.Println("Exemplo 8  (Arrays)")
+	underRed.Println("Exemplo 9  (Slices)")
 	fmt.Scan(&exampleNumber)
 
-	if exampleNumber == 1 {
+	switch exampleNumber {
+	case 1:
 		Hello_World.HelloWorld()
-	} else if exampleNumber == 2 {
+	case 2:
 		Values.Values()
-	} else if exampleNumber == 3 {
+	case 3:
 		Variables.Variables()
-	} else if exampleNumber == 4 {
+	case 4:
 		Constants.Constants()
-	} else if exampleNumber == 5 {
+	case 5:
 		For.For()
-	} else if exampleNumber == 6 {
+	case 6:
 		If_Else.If_Else()
-	} else if exampleNumber == 7 {
+	case 7:
 		Switch.Switch()
-	} else if exampleNumber == 8 {
+	case 8:
 		Arrays.Arrays()
+	case 9:
+		Slices.Slices()
 	}
 
 }

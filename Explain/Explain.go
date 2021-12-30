@@ -25,6 +25,9 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("Em Go, uma matriz(Array) é uma sequência numerada de elementos de um comprimento específico.")
 	case 9:
 		finaltext = fmt.Sprintln("Slices são um tipo de dados chave em Go, fornecendo uma interface mais poderosa para sequências do que arrays.")
+	case 10:
+		finaltext = fmt.Sprintln("Mapas são o tipo de dados associativo embutido do Go (às vezes chamados de hashes ou dicts em outras línguas).")
+
 	}
 	return finaltext
 }

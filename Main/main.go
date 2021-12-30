@@ -8,6 +8,7 @@ import (
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
+	Maps "github.com/AndreoBouzas/Go_By_Example/Maps"
 	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
@@ -24,15 +25,16 @@ var (
 func main() {
 
 	color.HiWhite("Digite o NÚMERO do exemplo que gostaria de ohar! :")
-	formatVibrantYellow.Println("Exemplo 1  (Hello World!)")
-	formatVibrantYellow.Println("Exemplo 2  (Valores e seus tipos)")
-	formatVibrantYellow.Println("Exemplo 3  (Variáveis e Declarações)")
-	formatVibrantYellow.Println("Exemplo 4  (Constantes)")
-	formatVibrantYellow.Println("Exemplo 5  (Laço For)")
-	formatVibrantYellow.Println("Exemplo 6  (If/Else)")
-	formatVibrantYellow.Println("Exemplo 7  (Switch)")
-	formatVibrantYellow.Println("Exemplo 8  (Arrays)")
-	formatVibrantYellow.Println("Exemplo 9  (Slices)")
+	formatVibrantYellow.Println("Exemplo 1   (Hello World!)")
+	formatVibrantYellow.Println("Exemplo 2   (Valores e seus tipos)")
+	formatVibrantYellow.Println("Exemplo 3   (Variáveis e Declarações)")
+	formatVibrantYellow.Println("Exemplo 4   (Constantes)")
+	formatVibrantYellow.Println("Exemplo 5   (Laço For)")
+	formatVibrantYellow.Println("Exemplo 6   (If/Else)")
+	formatVibrantYellow.Println("Exemplo 7   (Switch)")
+	formatVibrantYellow.Println("Exemplo 8   (Arrays)")
+	formatVibrantYellow.Println("Exemplo 9   (Slices)")
+	formatVibrantYellow.Println("Exemplo 10  (Maps)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -54,6 +56,8 @@ func main() {
 		Arrays.Arrays()
 	case 9:
 		Slices.Slices()
+	case 10:
+		Maps.Maps()
 	}
 
 }

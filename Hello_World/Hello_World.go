@@ -14,7 +14,7 @@ var (
 
 //Declarando a função principal
 func HelloWorld() {
-	underRed.Print("Exemplo 1  (Hello World!): \n\n")
+	underRed.Print("\n\n\nExemplo 1  (Hello World!): \n\n")
 	//chamando a função de explicação
 	underBlue.Println(Explain.ExplainThis(1))
 	//Print na tela da mensagem definida!

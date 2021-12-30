@@ -22,7 +22,7 @@ func Slices() {
 	fmt.Print("\nCriar uma fatia vazia com comprimento diferente de zero, use o embutido make. Aqui, fazemos uma fatia de strings de comprimento 3(inicialmente com valor zero). \n")
 	exampleText.Print("\nEXEMPLO : \n")
 	exampleStyle.Print(`
-	fmts := make([]string, 3)
+	fmt := make([]string, 3)
 	fmt.Println("emp:", s)
 	`)
 	resultText.Print("\nRESULTADO : \n")

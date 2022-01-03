@@ -27,6 +27,12 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("Slices são um tipo de dados chave em Go, fornecendo uma interface mais poderosa para sequências do que arrays.")
 	case 10:
 		finaltext = fmt.Sprintln("Mapas são o tipo de dados associativo embutido do Go (às vezes chamados de hashes ou dicts em outras línguas).")
+	case 11:
+		finaltext = fmt.Sprintln("Range itera sobre elementos em uma variedade de estruturas de dados. Vamos ver como usar range em algumas das estruturas de dados que já aprendemos.")
+	case 12:
+		finaltext = fmt.Sprintln("As funções são centrais no Go. Aprenderemos sobre as funções com alguns exemplos diferentes.")
+	case 13:
+		finaltext = fmt.Sprintln("As funções variáveis podem ser chamadas com qualquer número de argumentos finais. Por exemplo,fmt.Printl né uma função variável comum.")
 
 	}
 	return finaltext

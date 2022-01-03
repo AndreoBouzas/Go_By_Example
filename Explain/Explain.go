@@ -33,7 +33,10 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("As funções são centrais no Go. Aprenderemos sobre as funções com alguns exemplos diferentes.")
 	case 13:
 		finaltext = fmt.Sprintln("As funções variáveis podem ser chamadas com qualquer número de argumentos finais. Por exemplo,fmt.Printl né uma função variável comum.")
-
+	case 14:
+		finaltext = fmt.Sprintln("Go oferece suporte a funções anônimas , que podem formar encerramentos(Closures) . As funções anônimas são úteis quando você deseja definir uma função embutida sem precisar nomeá-la.")
+	case 15:
+		finaltext = fmt.Sprintln("Go oferece suporte a funções recursivas . Aqui está um exemplo clássico.")
 	}
 	return finaltext
 }

@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
+	Closures "github.com/AndreoBouzas/Go_By_Example/Closures"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Functions "github.com/AndreoBouzas/Go_By_Example/Functions"
@@ -11,6 +12,7 @@ import (
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
 	Maps "github.com/AndreoBouzas/Go_By_Example/Maps"
 	Range "github.com/AndreoBouzas/Go_By_Example/Range"
+	Recursion "github.com/AndreoBouzas/Go_By_Example/Recursion"
 	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
@@ -41,6 +43,8 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 11  (Range)")
 	formatVibrantYellow.Println("Exemplo 12  (Functions)")
 	formatVibrantYellow.Println("Exemplo 13  (Função Variável)")
+	formatVibrantYellow.Println("Exemplo 14  (Closures)")
+	formatVibrantYellow.Println("Exemplo 15  (Recursion)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -70,6 +74,10 @@ func main() {
 		Functions.Functions()
 	case 13:
 		VariadicFunctions.VariadicFunctions()
+	case 14:
+		Closures.Closures()
+	case 15:
+		Recursion.Recursion()
 	}
 
 }

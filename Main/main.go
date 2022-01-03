@@ -6,13 +6,16 @@ import (
 	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
 	For "github.com/AndreoBouzas/Go_By_Example/For"
+	Functions "github.com/AndreoBouzas/Go_By_Example/Functions"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
 	Maps "github.com/AndreoBouzas/Go_By_Example/Maps"
+	Range "github.com/AndreoBouzas/Go_By_Example/Range"
 	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
 	Variables "github.com/AndreoBouzas/Go_By_Example/Variables"
+	VariadicFunctions "github.com/AndreoBouzas/Go_By_Example/VariadicFunctions"
 	color "github.com/fatih/color"
 )
 
@@ -35,6 +38,9 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 8   (Arrays)")
 	formatVibrantYellow.Println("Exemplo 9   (Slices)")
 	formatVibrantYellow.Println("Exemplo 10  (Maps)")
+	formatVibrantYellow.Println("Exemplo 11  (Range)")
+	formatVibrantYellow.Println("Exemplo 12  (Functions)")
+	formatVibrantYellow.Println("Exemplo 13  (Função Variável)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -58,6 +64,12 @@ func main() {
 		Slices.Slices()
 	case 10:
 		Maps.Maps()
+	case 11:
+		Range.Range()
+	case 12:
+		Functions.Functions()
+	case 13:
+		VariadicFunctions.VariadicFunctions()
 	}
 
 }

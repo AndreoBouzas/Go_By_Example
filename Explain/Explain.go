@@ -37,6 +37,12 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("Go oferece suporte a funções anônimas , que podem formar encerramentos(Closures) . As funções anônimas são úteis quando você deseja definir uma função embutida sem precisar nomeá-la.")
 	case 15:
 		finaltext = fmt.Sprintln("Go oferece suporte a funções recursivas . Aqui está um exemplo clássico.")
+	case 16:
+		finaltext = fmt.Sprintln("Go oferece suporte a ponteiros , permitindo que você passe referências a valores e registros dentro de seu programa.")
+	case 17:
+		finaltext = fmt.Sprintln("As estruturas de Go são coleções digitadas de campos. Eles são úteis para agrupar dados para formar registros.")
+	case 18:
+		finaltext = fmt.Sprintln("Go oferece suporte a métodos definidos em tipos de estrutura.")
 	}
 	return finaltext
 }

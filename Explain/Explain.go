@@ -43,6 +43,10 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("As estruturas de Go são coleções digitadas de campos. Eles são úteis para agrupar dados para formar registros.")
 	case 18:
 		finaltext = fmt.Sprintln("Go oferece suporte a métodos definidos em tipos de estrutura.")
+	case 19:
+		finaltext = fmt.Sprintln("As interfaces são coleções nomeadas de assinaturas de método.")
+	case 20:
+		finaltext = fmt.Sprintln("Go oferece suporte à incorporação de structs e interfaces para expressar uma composição de tipos mais uniforme .")
 	}
 	return finaltext
 }

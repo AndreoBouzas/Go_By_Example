@@ -6,10 +6,12 @@ import (
 	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
 	Closures "github.com/AndreoBouzas/Go_By_Example/Closures"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
+	Embedding "github.com/AndreoBouzas/Go_By_Example/Embedding"
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Functions "github.com/AndreoBouzas/Go_By_Example/Functions"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
+	Interfaces "github.com/AndreoBouzas/Go_By_Example/Interfaces"
 	Maps "github.com/AndreoBouzas/Go_By_Example/Maps"
 	Methods "github.com/AndreoBouzas/Go_By_Example/Methods"
 	Pointers "github.com/AndreoBouzas/Go_By_Example/Pointers"
@@ -51,6 +53,8 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 16  (Ponteiros)")
 	formatVibrantYellow.Println("Exemplo 17  (Estruturas)")
 	formatVibrantYellow.Println("Exemplo 18  (Métodos)")
+	formatVibrantYellow.Println("Exemplo 19  (Interfaces)")
+	formatVibrantYellow.Println("Exemplo 20  (incorporação)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -90,6 +94,10 @@ func main() {
 		Structs.Structs()
 	case 18:
 		Methods.Methods()
+	case 19:
+		Interfaces.Interfaces()
+	case 20:
+		Embedding.Embedding()
 	}
 
 }

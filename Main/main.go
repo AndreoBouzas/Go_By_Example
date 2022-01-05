@@ -11,9 +11,12 @@ import (
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
 	Maps "github.com/AndreoBouzas/Go_By_Example/Maps"
+	Methods "github.com/AndreoBouzas/Go_By_Example/Methods"
+	Pointers "github.com/AndreoBouzas/Go_By_Example/Pointers"
 	Range "github.com/AndreoBouzas/Go_By_Example/Range"
 	Recursion "github.com/AndreoBouzas/Go_By_Example/Recursion"
 	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
+	Structs "github.com/AndreoBouzas/Go_By_Example/Structs"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
 	Values "github.com/AndreoBouzas/Go_By_Example/Values"
 	Variables "github.com/AndreoBouzas/Go_By_Example/Variables"
@@ -29,7 +32,7 @@ var (
 
 func main() {
 
-	color.HiWhite("Digite o NÚMERO do exemplo que gostaria de ohar! :")
+	color.HiWhite("\nDIGITE o NÚMERO do exemplo que gostaria de ohar! :\n")
 	formatVibrantYellow.Println("Exemplo 1   (Hello World!)")
 	formatVibrantYellow.Println("Exemplo 2   (Valores e seus tipos)")
 	formatVibrantYellow.Println("Exemplo 3   (Variáveis e Declarações)")
@@ -45,6 +48,9 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 13  (Função Variável)")
 	formatVibrantYellow.Println("Exemplo 14  (Closures)")
 	formatVibrantYellow.Println("Exemplo 15  (Recursion)")
+	formatVibrantYellow.Println("Exemplo 16  (Ponteiros)")
+	formatVibrantYellow.Println("Exemplo 17  (Estruturas)")
+	formatVibrantYellow.Println("Exemplo 18  (Métodos)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -78,6 +84,12 @@ func main() {
 		Closures.Closures()
 	case 15:
 		Recursion.Recursion()
+	case 16:
+		Pointers.Pointers()
+	case 17:
+		Structs.Structs()
+	case 18:
+		Methods.Methods()
 	}
 
 }

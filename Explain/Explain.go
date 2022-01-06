@@ -56,9 +56,9 @@ func ExplainThis(exampleNumber int) string {
 	case 24:
 		finaltext = fmt.Sprintln("Por padrão, os canais não têm buffer, o que significa que eles só aceitarão enviar( chan <-) se houver um recptor( <- chan) correspondente pronto para receber o valor enviado. Os canais com buffer aceitam um número limitado de valores sem um receptor correspondente para esses valores.")
 	case 25:
-		finaltext = fmt.Sprintln(" ")
+		finaltext = fmt.Sprintln("Podemos usar canais para sincronizar a execução entre goroutines. Aqui está um exemplo de como usar um recebimento de bloqueio para esperar que um goroutine termine. Ao esperar que vários goroutines terminem, você pode preferir usar um WaitGroup .")
 	case 26:
-		finaltext = fmt.Sprintln(" ")
+		finaltext = fmt.Sprintln("Ao usar canais como parâmetros de função, você pode especificar se um canal destina-se apenas a enviar ou receber valores. Essa especificidade aumenta a segurança de tipo do programa.")
 	case 27:
 		finaltext = fmt.Sprintln(" ")
 	case 28:

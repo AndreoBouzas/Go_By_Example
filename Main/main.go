@@ -4,11 +4,15 @@ import (
 	"fmt"
 
 	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
+	ChannelBuffering "github.com/AndreoBouzas/Go_By_Example/ChannelBuffering"
+	Channels "github.com/AndreoBouzas/Go_By_Example/Channels"
 	Closures "github.com/AndreoBouzas/Go_By_Example/Closures"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
 	Embedding "github.com/AndreoBouzas/Go_By_Example/Embedding"
+	Errors "github.com/AndreoBouzas/Go_By_Example/Errors"
 	For "github.com/AndreoBouzas/Go_By_Example/For"
 	Functions "github.com/AndreoBouzas/Go_By_Example/Functions"
+	Goroutines "github.com/AndreoBouzas/Go_By_Example/Goroutines"
 	Hello_World "github.com/AndreoBouzas/Go_By_Example/Hello_World"
 	If_Else "github.com/AndreoBouzas/Go_By_Example/If_Else"
 	Interfaces "github.com/AndreoBouzas/Go_By_Example/Interfaces"
@@ -54,7 +58,11 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 17  (Estruturas)")
 	formatVibrantYellow.Println("Exemplo 18  (Métodos)")
 	formatVibrantYellow.Println("Exemplo 19  (Interfaces)")
-	formatVibrantYellow.Println("Exemplo 20  (incorporação)")
+	formatVibrantYellow.Println("Exemplo 20  (Incorporação)")
+	formatVibrantYellow.Println("Exemplo 21  (Erros)")
+	formatVibrantYellow.Println("Exemplo 22  (Goroutines)")
+	formatVibrantYellow.Println("Exemplo 23  (Canais)")
+	formatVibrantYellow.Println("Exemplo 24  (Buffer de canal)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -98,6 +106,19 @@ func main() {
 		Interfaces.Interfaces()
 	case 20:
 		Embedding.Embedding()
+	case 21:
+		Errors.Errors()
+	case 22:
+		Goroutines.Goroutines()
+	case 23:
+		Channels.Channels()
+	case 24:
+		ChannelBuffering.ChannelBuffering()
+		/*case 25:
+			Função.Função()
+		case 26:
+			Função.Função()
+		*/
 	}
 
 }

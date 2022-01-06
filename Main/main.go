@@ -5,6 +5,8 @@ import (
 
 	Arrays "github.com/AndreoBouzas/Go_By_Example/Arrays"
 	ChannelBuffering "github.com/AndreoBouzas/Go_By_Example/ChannelBuffering"
+	ChannelDirections "github.com/AndreoBouzas/Go_By_Example/ChannelDirections"
+	ChannelSynchronization "github.com/AndreoBouzas/Go_By_Example/ChannelSynchronization"
 	Channels "github.com/AndreoBouzas/Go_By_Example/Channels"
 	Closures "github.com/AndreoBouzas/Go_By_Example/Closures"
 	Constants "github.com/AndreoBouzas/Go_By_Example/Constants"
@@ -63,6 +65,8 @@ func main() {
 	formatVibrantYellow.Println("Exemplo 22  (Goroutines)")
 	formatVibrantYellow.Println("Exemplo 23  (Canais)")
 	formatVibrantYellow.Println("Exemplo 24  (Buffer de canal)")
+	formatVibrantYellow.Println("Exemplo 25  (Sincronização de canais)")
+	formatVibrantYellow.Println("Exemplo 26  (Canais Direcionáis)")
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -114,11 +118,11 @@ func main() {
 		Channels.Channels()
 	case 24:
 		ChannelBuffering.ChannelBuffering()
-		/*case 25:
-			Função.Função()
-		case 26:
-			Função.Função()
-		*/
+	case 25:
+		ChannelSynchronization.ChannelSynchronization()
+	case 26:
+		ChannelDirections.ChannelDirections()
+
 	}
 
 }

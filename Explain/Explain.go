@@ -47,6 +47,25 @@ func ExplainThis(exampleNumber int) string {
 		finaltext = fmt.Sprintln("As interfaces são coleções nomeadas de assinaturas de método.")
 	case 20:
 		finaltext = fmt.Sprintln("Go oferece suporte à incorporação de structs e interfaces para expressar uma composição de tipos mais uniforme .")
+	case 21:
+		finaltext = fmt.Sprintln("Em Go, é idiomático comunicar erros por meio de um valor de retorno separado e explícito. Isso contrasta com as exceções usadas em linguagens como Java e Ruby e o único resultado / valor de erro sobrecarregado às vezes usado na abordagem de C. Go torna fácil ver quais funções retornam erros e manipulá-los usando as mesmas construções de linguagem empregadas para qualquer outra, tarefas sem erros.")
+	case 22:
+		finaltext = fmt.Sprintln("Uma goroutine é um thread de execução leve.")
+	case 23:
+		finaltext = fmt.Sprintln("Os canais(Channels) são os tubos que conectam goroutines simultâneas. Você pode enviar valores para canais de uma goroutine e receber esses valores em outra goroutine.")
+	case 24:
+		finaltext = fmt.Sprintln("Por padrão, os canais não têm buffer, o que significa que eles só aceitarão enviar( chan <-) se houver um recptor( <- chan) correspondente pronto para receber o valor enviado. Os canais com buffer aceitam um número limitado de valores sem um receptor correspondente para esses valores.")
+	case 25:
+		finaltext = fmt.Sprintln(" ")
+	case 26:
+		finaltext = fmt.Sprintln(" ")
+	case 27:
+		finaltext = fmt.Sprintln(" ")
+	case 28:
+		finaltext = fmt.Sprintln(" ")
+	case 29:
+		finaltext = fmt.Sprintln(" ")
+
 	}
 	return finaltext
 }

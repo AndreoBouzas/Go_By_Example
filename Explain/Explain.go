@@ -60,7 +60,7 @@ func ExplainThis(exampleNumber int) string {
 	case 26:
 		finaltext = fmt.Sprintln("Ao usar canais como parâmetros de função, você pode especificar se um canal destina-se apenas a enviar ou receber valores. Essa especificidade aumenta a segurança de tipo do programa.")
 	case 27:
-		finaltext = fmt.Sprintln(" ")
+		finaltext = fmt.Sprintln("O Select de Go permite que você aguarde operações de vários canais. Combinar goroutines e canais com select é um recurso poderoso do Go.")
 	case 28:
 		finaltext = fmt.Sprintln(" ")
 	case 29:

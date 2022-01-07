@@ -23,6 +23,7 @@ import (
 	Pointers "github.com/AndreoBouzas/Go_By_Example/Pointers"
 	Range "github.com/AndreoBouzas/Go_By_Example/Range"
 	Recursion "github.com/AndreoBouzas/Go_By_Example/Recursion"
+	Select "github.com/AndreoBouzas/Go_By_Example/Select"
 	Slices "github.com/AndreoBouzas/Go_By_Example/Slices"
 	Structs "github.com/AndreoBouzas/Go_By_Example/Structs"
 	Switch "github.com/AndreoBouzas/Go_By_Example/Switch"
@@ -36,37 +37,28 @@ var (
 	formatVibrantYellow = color.New(color.FgHiYellow)
 	formatVibrantBlack  = color.New(color.FgBlack)
 	exampleNumber       = 0
+	underRed            = color.New(color.FgHiRed).Add(color.Underline)
 )
 
 func main() {
 
 	color.HiWhite("\nDIGITE o NÚMERO do exemplo que gostaria de ohar! :\n")
-	formatVibrantYellow.Println("Exemplo 1   (Hello World!)")
-	formatVibrantYellow.Println("Exemplo 2   (Valores e seus tipos)")
-	formatVibrantYellow.Println("Exemplo 3   (Variáveis e Declarações)")
-	formatVibrantYellow.Println("Exemplo 4   (Constantes)")
-	formatVibrantYellow.Println("Exemplo 5   (Laço For)")
-	formatVibrantYellow.Println("Exemplo 6   (If/Else)")
-	formatVibrantYellow.Println("Exemplo 7   (Switch)")
-	formatVibrantYellow.Println("Exemplo 8   (Arrays)")
-	formatVibrantYellow.Println("Exemplo 9   (Slices)")
-	formatVibrantYellow.Println("Exemplo 10  (Maps)")
-	formatVibrantYellow.Println("Exemplo 11  (Range)")
-	formatVibrantYellow.Println("Exemplo 12  (Functions)")
-	formatVibrantYellow.Println("Exemplo 13  (Função Variável)")
-	formatVibrantYellow.Println("Exemplo 14  (Closures)")
-	formatVibrantYellow.Println("Exemplo 15  (Recursion)")
-	formatVibrantYellow.Println("Exemplo 16  (Ponteiros)")
-	formatVibrantYellow.Println("Exemplo 17  (Estruturas)")
-	formatVibrantYellow.Println("Exemplo 18  (Métodos)")
-	formatVibrantYellow.Println("Exemplo 19  (Interfaces)")
-	formatVibrantYellow.Println("Exemplo 20  (Incorporação)")
-	formatVibrantYellow.Println("Exemplo 21  (Erros)")
-	formatVibrantYellow.Println("Exemplo 22  (Goroutines)")
-	formatVibrantYellow.Println("Exemplo 23  (Canais)")
-	formatVibrantYellow.Println("Exemplo 24  (Buffer de canal)")
-	formatVibrantYellow.Println("Exemplo 25  (Sincronização de canais)")
-	formatVibrantYellow.Println("Exemplo 26  (Canais Direcionáis)")
+	formatVibrantYellow.Println(`
+	Exemplo 1   (Hello World!)		Exemplo 14  (Closures)
+	Exemplo 2   (Valores e seus tipos)	Exemplo 15  (Recursion)	
+	Exemplo 3   (Variáveis e Declarações)	Exemplo 16  (Ponteiros)
+	Exemplo 4   (Constantes)		Exemplo 17  (Estruturas)
+	Exemplo 5   (Laço For)			Exemplo 18  (Métodos)
+	Exemplo 6   (If/Else)			Exemplo 19  (Interfaces)
+	Exemplo 7   (Switch)			Exemplo 20  (Incorporação)
+	Exemplo 8   (Arrays)			Exemplo 21  (Erros)
+	Exemplo 9   (Slices)			Exemplo 22  (Goroutines)
+	Exemplo 10  (Maps)			Exemplo 23  (Canais)
+	Exemplo 11  (Range)			Exemplo 24  (Buffer de canal)
+	Exemplo 12  (Functions)			Exemplo 25  (Sincronização de canais)
+	Exemplo 13  (Função Variável)		Exemplo 26  (Canais Direcionáis)
+						Exemplo 27  (Select)`)
+
 	fmt.Scan(&exampleNumber)
 
 	switch exampleNumber {
@@ -122,6 +114,10 @@ func main() {
 		ChannelSynchronization.ChannelSynchronization()
 	case 26:
 		ChannelDirections.ChannelDirections()
+	case 27:
+		Select.Select()
+	default:
+		underRed.Print("\n\n\n!ATENÇÃO!\n\n\n!NÚMERO DE EXEMPLO INVÁLIDO!\n\n\n")
 
 	}
 

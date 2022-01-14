@@ -62,9 +62,25 @@ func ExplainThis(exampleNumber int) string {
 	case 27:
 		finaltext = fmt.Sprintln("O Select de Go permite que você aguarde operações de vários canais. Combinar goroutines e canais com select é um recurso poderoso do Go.")
 	case 28:
-		finaltext = fmt.Sprintln(" ")
+		finaltext = fmt.Sprintln("Os Timeouts(tempos limite) são importantes para programas que se conectam a recursos externos ou que precisam limitar o tempo de execução. A implementação de Timeouts em Go é fácil e elegante graças aos canais e select.")
 	case 29:
-		finaltext = fmt.Sprintln(" ")
+		finaltext = fmt.Sprintln("Os canais básicos de envios e recebimento estão bloqueando. No entanto, podemos usar select com uma case default, para implementar canais de envios, recebimentos e até mesmo s multidirecionais sem bloqueio.")
+	case 30:
+		finaltext = fmt.Sprintln("Fechar um canal indica que não serão enviados mais valores nele. Isso pode ser útil para comunicar a conclusão aos receptores do canal.")
+	case 31:
+		finaltext = fmt.Sprintln("Em um exemplo anterior , vimos como 'for' fornecer a iteração 'range' sobre estruturas de dados básicas. Também podemos usar essa sintaxe para iterar sobre os valores recebidos de um canal.")
+	case 32:
+		finaltext = fmt.Sprintln("Muitas vezes queremos executar o código Go em algum momento no futuro, ou repetidamente em algum intervalo. Os recursos de timer e ticker integrados do Go facilitam essas duas tarefas. Veremos primeiro os temporizadores e depois os tickers")
+	case 33:
+		finaltext = fmt.Sprintln("")
+	case 34:
+		finaltext = fmt.Sprintln("")
+	case 35:
+		finaltext = fmt.Sprintln("")
+	case 36:
+		finaltext = fmt.Sprintln("")
+	case 37:
+		finaltext = fmt.Sprintln("")
 
 	}
 	return finaltext
